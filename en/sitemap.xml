@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://giftcp.github.io/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-15T14:41:13+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -15,8 +15,11 @@
                 href="https://giftcp.github.io/"
                 />
   </url><url>
+    <loc>https://giftcp.github.io/post/arch/</loc>
+    <lastmod>2025-05-15T14:41:13+02:00</lastmod>
+  </url><url>
     <loc>https://giftcp.github.io/categories/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-15T14:41:13+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -28,14 +31,11 @@
                 href="https://giftcp.github.io/categories/"
                 />
   </url><url>
-    <loc>https://giftcp.github.io/tags/hugo/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://giftcp.github.io/tags/index/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-15T14:41:13+02:00</lastmod>
   </url><url>
     <loc>https://giftcp.github.io/post/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-15T14:41:13+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -47,8 +47,57 @@
                 href="https://giftcp.github.io/post/"
                 />
   </url><url>
+    <loc>https://giftcp.github.io/tags/tag_name1/</loc>
+    <lastmod>2025-05-15T14:41:13+02:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/tags/tag_name2/</loc>
+    <lastmod>2025-05-15T14:41:13+02:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/tags/</loc>
+    <lastmod>2025-05-15T14:41:13+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://giftcp.github.io/pt/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://giftcp.github.io/tags/"
+                />
+  </url><url>
+    <loc>https://giftcp.github.io/categories/technology/</loc>
+    <lastmod>2025-05-15T14:41:13+02:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/categories/arch/</loc>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/tags/arch/</loc>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/post/arch_linux_installation/</loc>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/series/arch-linux/</loc>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/tags/btrfs/</loc>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/categories/linux/</loc>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/tags/linux/</loc>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/tags/luks/</loc>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/tags/mkinitcpio/</loc>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://giftcp.github.io/series/</loc>
-    <lastmod>2022-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -60,21 +109,14 @@
                 href="https://giftcp.github.io/series/"
                 />
   </url><url>
-    <loc>https://giftcp.github.io/categories/syntax/</loc>
+    <loc>https://giftcp.github.io/tags/systemd/</loc>
+    <lastmod>2025-05-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://giftcp.github.io/tags/hugo/</loc>
     <lastmod>2022-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://giftcp.github.io/tags/</loc>
+    <loc>https://giftcp.github.io/categories/syntax/</loc>
     <lastmod>2022-03-24T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://giftcp.github.io/pt/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://giftcp.github.io/tags/"
-                />
   </url><url>
     <loc>https://giftcp.github.io/series/themes-guide/</loc>
     <lastmod>2022-03-24T00:00:00+00:00</lastmod>

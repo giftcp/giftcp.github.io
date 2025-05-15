@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arch on GIFT CP</title>
+    <link>https://giftcp.github.io/categories/arch/</link>
+    <description>Recent content in Arch on GIFT CP</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 15 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://giftcp.github.io/categories/arch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arch installation on a BTRFS root filesystem with LUKS encryption</title>
+      <link>https://giftcp.github.io/post/arch_linux_installation/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://giftcp.github.io/post/arch_linux_installation/</guid>
+      <description>
+        
+          
+            &lt;h1 id=&#34;arch-linux-installation-guide-uefi-gpt-systemd-boot-luks-btrfs&#34;&gt;Arch Linux Installation Guide (UEFI, GPT, systemd-boot, LUKS, Btrfs)&lt;/h1&gt;
+&lt;h2 id=&#34;1-initial-setup&#34;&gt;1. Initial Setup&lt;/h2&gt;
+&lt;h3 id=&#34;11-laptop-model&#34;&gt;1.1 Laptop Model&lt;/h3&gt;
+&lt;p&gt;Identify the model for compatibility, especially for Wi-Fi and graphics.&lt;/p&gt;
+&lt;h3 id=&#34;12-iso-download&#34;&gt;1.2 ISO Download&lt;/h3&gt;
+&lt;p&gt;Download the latest Arch ISO from: &lt;a href=&#34;https://archlinux.org/download/&#34;&gt;https://archlinux.org/download/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;13-set-console-font-optional&#34;&gt;1.3 Set Console Font (Optional)&lt;/h3&gt;
+&lt;p&gt;If the console font appears too small, set a larger one:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;setfont ter-v24b
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To copy the font for persistence:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;cp /usr/share/kbd/consolefonts/ter-v24b.psf.gz /mnt/usr/share/kbd/consolefonts
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;other-font-options-located-in-usrsharekbdconsolefonts&#34;&gt;Other font options (located in &lt;code&gt;/usr/share/kbd/consolefonts&lt;/code&gt;):&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ter-132n&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lat9w-16&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sun12x22&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ter-u28b&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;14-set-alias-for-clear-command&#34;&gt;1.4 Set Alias for Clear Command&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;alias&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;clear
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;15-set-keyboard-layout&#34;&gt;1.5 Set Keyboard Layout&lt;/h3&gt;
+&lt;p&gt;Default layout is &lt;code&gt;us&lt;/code&gt;. To change (e.g. to UK):&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
