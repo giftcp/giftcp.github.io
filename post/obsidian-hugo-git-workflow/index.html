@@ -235,6 +235,19 @@
   </span>
   </div>
 
+      <div class="post_toc">
+        <h2>Overview</h2>
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
     <div class="post_body"><h4 id="prerequisites">Prerequisites</h4>
 <p>This tutorial shows how the work flow on how to create content in obsidian git and hugo and  have it available on git pages wit minimal scripting</p>
 <p>The following are the prerequisites</p>
@@ -280,6 +293,26 @@ I noticed that when i just run the Hugo command without the options it replaced 
 </span></span><span class="line"><span class="ln">2</span><span class="cl">git add .
 </span></span><span class="line"><span class="ln">3</span><span class="cl">git commit -m &#34;new content&#34; # a random function can usied to generete text for the commit messege
 </span></span><span class="line"><span class="ln">4</span><span class="cl">git push origin main
+</span></span></code></pre></div><h4 id="update-script">Update Script</h4>
+<p>As stated above the public folder is a sub-module. To refresh the public folders the Hugo command needs to be ran in the root folder and the git commits need to be run from the the public folder. i designed this script so that it can be run from anywhere. You can modify it to suit your needs accordingly.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="c1"># === Configuration ===</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="nv">SOURCE_DIR</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$HOME</span><span class="s2">/PARA/01 PROJECTS/hugo/clarity&#34;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="nv">PUBLIC_DIR</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$SOURCE_DIR</span><span class="s2">/public&#34;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="nv">GIT_DIR</span><span class="o">=</span><span class="s2">&#34;</span><span class="nv">$SOURCE_DIR</span><span class="s2">/.git/modules/public&#34;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="nv">BASE_URL</span><span class="o">=</span><span class="s2">&#34;https://giftcp.github.io/&#34;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="c1"># Step 1: Compile the markdown to HTML in the submodule</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">hugo --source <span class="s2">&#34;</span><span class="nv">$SOURCE_DIR</span><span class="s2">&#34;</span> --baseURL<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$BASE_URL</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="c1"># Step 2: Push changes inside the submodule</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">git --git-dir<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$GIT_DIR</span><span class="s2">&#34;</span> --work-tree<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$PUBLIC_DIR</span><span class="s2">&#34;</span> add .
+</span></span><span class="line"><span class="ln">14</span><span class="cl">
+</span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="nv">COMMIT_MSG</span><span class="o">=</span><span class="s2">&#34;Auto-update </span><span class="k">$(</span>date +<span class="s1">&#39;%Y-%m-%d_%H-%M-%S&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">git --git-dir<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$GIT_DIR</span><span class="s2">&#34;</span> --work-tree<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$PUBLIC_DIR</span><span class="s2">&#34;</span> commit -m <span class="s2">&#34;</span><span class="nv">$COMMIT_MSG</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">
+</span></span><span class="line"><span class="ln">18</span><span class="cl">git --git-dir<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$GIT_DIR</span><span class="s2">&#34;</span> --work-tree<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$PUBLIC_DIR</span><span class="s2">&#34;</span> push origin main
 </span></span></code></pre></div><h4 id="coming-soon">Coming Soon</h4>
 <p>the keenest of you would have noticed that i have not documented handling images. The following are some option i intend to use</p>
 <ul>
