@@ -4,15 +4,15 @@
 	"sourceRoot": "/home/thor/PARA/01 PROJECTS/hugo/clarity",
 	"sources": [
 		"themes/hugo-clarity/assets/sass/main.sass",
-		"../themes/hugo-clarity/assets/sass/_variables.sass",
-		"../themes/hugo-clarity/assets/sass/_override.sass",
-		"../themes/hugo-clarity/assets/sass/_fonts.sass",
-		"../themes/hugo-clarity/assets/sass/_base.sass",
-		"../themes/hugo-clarity/assets/sass/_components.sass",
-		"../themes/hugo-clarity/assets/sass/_utils.sass",
-		"../themes/hugo-clarity/assets/sass/_mobile.sass",
-		"../themes/hugo-clarity/assets/sass/_syntax.sass",
-		"../themes/hugo-clarity/assets/sass/_custom.sass"
+		"themes/hugo-clarity/assets/sass/_variables.sass",
+		"themes/hugo-clarity/assets/sass/_override.sass",
+		"themes/hugo-clarity/assets/sass/_fonts.sass",
+		"themes/hugo-clarity/assets/sass/_base.sass",
+		"themes/hugo-clarity/assets/sass/_components.sass",
+		"themes/hugo-clarity/assets/sass/_utils.sass",
+		"themes/hugo-clarity/assets/sass/_mobile.sass",
+		"themes/hugo-clarity/assets/sass/_syntax.sass",
+		"themes/hugo-clarity/assets/sass/_custom.sass"
 	],
 	"sourcesContent": [
 		"$baseURL: 'https://giftcp.github.io/';\n$fontsPath: '../fonts/';\n$imagesPath: '../images/';\n$iconsPath: '../icons/';\n@import 'variables';\n@import 'override';\n@import 'fonts';\n@import 'base';\n@import 'components';\n@import 'utils';\n@import 'mobile';\n@import 'syntax';\n@import 'custom';\n",
